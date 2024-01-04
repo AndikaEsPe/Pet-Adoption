@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Arial', sans-serif; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+        }
+
+        .color-block {
+            box-sizing: border-box;
+            width: 48%;
+            min-height: 150px;
+            display: inline-block;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            opacity: 0.8; 
+            margin-bottom: 10px;
+        }
+
+        #create {
+            background-color: #3498db;
+        }
+
+        #delete {
+            background-color: #9b59b6;
+        }
+
+        #update {
+            background-color: #2ecc71; 
+        }
+
+        #projection {
+            background-color: #e74c3c;
+        }
+
+        #selection {
+            background-color: #f39c12; 
+        }
+
+        #division {
+            background-color: #34495e;
+        }
+
+        a {
+            color: white;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .color-block {
+                width: 100%;
+            }
+        }
+
+    </style>
+    <title>Pet Shelter Management Main Dashboard</title>
+</head>
+<body>
+    <h1>Pet Shelter Management Dashboard</h1>
+
+    <div id="create" class="color-block">
+        <a href="./src/create/create_UI.html">Create</a>
+    </div>
+
+    <div id="delete" class="color-block">
+        <a href="./src/deletion/deletion_UI.html">Delete</a>
+    </div>
+
+    <div id="update" class="color-block">
+        <a href="./src/update/update.php">Update</a>
+    </div>
+
+    <div id="projection" class="color-block">
+        <a href="src/projection/projection_UI.php">Find Info (Projection)</a>
+    </div>
+
+    <div id="selection" class="color-block">
+        <a href="./src/selection/selection_UI.html">Search (Selection)</a>
+    </div>
+    <div id="division" class="color-block">
+        <a href="./src/division/division_query.php">Branches sponsored by all pet retailers</a>
+    </div>
+</body>
+</html>
